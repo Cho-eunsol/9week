@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+ <html lang="en”>
+ <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>SAVE ALARM</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+         <style type="text/css">
+ 
+ html {
+   font-family: "Noto Sans KR", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 1.5;
+ }
+                 body,h1,h2,p,ul,ol{margin: 0}
+                 body{}
+                 header, footer{padding-top: 0px;}
+                 footer{padding-top: 50px; padding-bottom: 200px; background: #1D1D1D;}
+                 section{padding-top: 100px; background: black;}
+                 section{padding-top: 100px; background: light-gray;}
+ 
+                 .flex{display: flex; flex-wrap: wrap; gap: 10px;}
+                 .w50 {width: }
+                 .white-line {height: 0.1px;background-color: white; margin: 20px 0;}
+                 .black {background-color: #000; color: white; padding: 40px 0;margin: 0;}
+                
+ 
+                 h1{font-weight: 700; font-size: 12rem; padding-top: 50px; padding-bottom: 0px;}
+                 h2{font-weight: 700; font-size: 3rem; padding-top: 70px; padding-bottom: 50px;line-height: 1.4; background:}
+                 h3{font-weight: 500; font-size: 2.2rem; padding-top: 30px; padding-bottom: 30px; line-height: 1.9; margin: 0;}
+                 h4{font-weight: 700; font-size: 1.8rem; padding-top: 70px; padding-bottom: 70px; line-height: 1.9; margin:0; background: black; border-radius: 10px;}
+                 h5{font-weight: 600; font-size: 2rem; padding-top: 25px; padding-bottom: 30px;line-height: 1.4; background: #1D1D1D; border-radius: 5px;}
+                 h6{font-weight: 600; font-size: 3rem; padding-top: 0px; padding-bottom: 30px;line-height: 1.7; border-radius: 0px;}
+                 p{font-weight: 350; font-size: 1.3rem; padding-top: 20px; padding-bottom: 120px; line-height: 2;}
+                 ul{font-weight: 350; font-size: 1.3rem; padding-top: 20px; padding-bottom: 10px; line-height: 2; background: #1D1D1D; border-radius: 5px;}
+                .wrap {width: 1000px;margin: auto;}
+
+                ol {font-weight: 500; font-size: 1.3rem; padding-top: 0px;padding-bottom: 30px; line-height: 2; border: 0px solid lightgreen; margin: 0px; background: ; color: lightgray; border-radius: 5px; padding-left: 20px;}
+
+                li {list-style-type: none;padding: 10px;margin-bottom: 10px;border-radius: 5px;}
+
+                li.bg-lawngreen {background-color: lawngreen;color: black;}
+
+                 img{width: 70%; display: block; margin: auto;}
+ 
+ 
+                 .left-spacing{padding-left: 720px;}
+                 .right-spacing{padding-right: 180px; padding-left: 100px;}
+                 .center-spacing{padding-left: 100px; padding-right: 100px; text-align: center;}
+ 
+                 .black, h2, h3, p, ul{color: white;}
+                 .darkgray h1{color: lawngreen;}
+                 .white h1{color: white;}
+                 .black h2{color: lawngreen;}
+                 .lawngreen h2{color: white;}
+                 .black h5{color: lawngreen;}
+                 .pink h5{color: lawngreen;}
+                 .pink p{color: #CFCFCF;}
+                 .white{bakcground: white;}
+                 .black footer{color: gray;}
+                 .black h3{color: white;}
+                 .black h4{color: white;}
+                 .pink h4{color:lawngreen;}
+                 .lawngreen h4{color:lawngreen;}
+                 .lawngreen h5{color: lawngreen;}
+                 .navy h6{color: red;}
+                 .navy ul{color: darkgray;}
+                 .white ul{color: lightgreen;}
+                 .white p{color: darkgray}
+                 .lawngreen al{color: white;}
+                 .bg-pic h2{color:white;}
+                 .lightgreen h4{color: white;}
+                 .ivory{background: ivory;}
+ 
+ 
+                 .linear-gradient {background: linear-gradient(to top, darkgray 0%, black 100%);}
+                 .bg-pic{background:url(help.jpg); background-size: cover; background-attachment: repeat; width: auto; padding-bottom: 100px; border-radius: 0px;}
+                 .bg-pic2{background: linear-gradient(to bottom, transparent 10%, black), url('alarm.gif'); background-size: 1750px; background-repeat: repeat; width: auto; padding-top: 100px;}
+                 .bg-pic10{background: url('line.png'); background-size: 1800px; background-repeat: repeat; width: auto; padding-top: 300px;}
+                 
+                 .bg-pic4{background:linear-gradient(transparent 50%, black), url('alchol.jpg'); background-size: 1750px; background-repeat: repeat; width:auto;}
+                 .bg-pic5{background:linear-gradient(transparent 0%, black),url('subway.jpg'); background-size: 1750px; background-repeat: repeat; width:auto;}
+                 .bg-pic6{background:linear-gradient(transparent 10%, black),url('couple.jpg'); background-size: 1750px; background-repeat: repeat; width:auto;}
+                 .bg-pic7{background: url(help2.jpg); background-size: cover; background-attachment: fixed; width: auto;}
+                 .bg-pic8{background:url('sweat.jpg'); background-size: cover; background-attachment: fixed; width: auto;}
+                 .bg-pic9{background:url('lawngreen.png'); background-size: 1750px; background-repeat: fixed; width: auto;}
+ 
+ 
+                 .layered-image{background: linear-gradient(to top, transparent 40%, black), url('rain2.gif'); background-size: 900px;}
+                  @keyframes blink {
+                 0% {opacity: 1;}
+                 50% {opacity: 0;}
+                 100% {opacity: 1;}}
+                 .blinking-text {animation: blink 1s infinite; /* 1초 간격으로 무한 반복 */}
+                 nav{background: #1D1D1D;}
+                 .flex{display: flex; justify-content: space-between;}
+                 .logo{padding: 8px; font-size: 2rem;}
+                 .menu{padding: 5px; width: 650px; }s
+                 li{list-style-type: none;}
+                 .logo{text-decoration: none; background:#1D1D1D; color: lawngreen; padding: 15px; display: block;}
+                 .menu li a{text-decoration: none; background:#1D1D1D; color: lawngreen; padding: 18px; display: block;}
+                 .menu li a:hover{background: lawngreen; color: lawngreen; text-decoration: ;}
+                 .service-type-container {display: flex;justify-content: center;gap: 30px;margin-top: 30px;margin-bottom: 30px;flex-wrap: wrap;}
+
+                .service-box {border: 1px solid lightgreen;border-radius: 10px;background: lightgreen;color: black;font-weight: 500;font-size: 1.2rem;padding: 20px 25px;width: 220px;text-align: center;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);cursor: pointer;transition: transform 0.2s;}
+
+                .service-box:hover {transform: scale(1.05);}
+                .table-box {
+  margin-bottom: 20px;
+  border: 0px lawngreen;
+  border-radius: 5px;
+  background: lightgreen;
+  color: black;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2;
+  padding: 20px 200px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  cursor: pointer; /* 클릭 가능한 표시 */
+  transition: background 0.3s ease;
+}
+
+.table-box:hover {
+  background: black; color: white;
+}
+        </style>
+ </head>
+ <body>
+         <nav>
+ <div class="wrap flex">
+ <div class="logo">save alarm</div>
+ <ul class="menu flex">
+ <li><a href="#" target="_blank">서비스 소개</a></li>
+ <li><a href="#" target="_blank">사용방법</a></li>
+ <li><a href="#" target="_blank">서비스 타입</a></li>
+ <li><a href="#" target="_blank">신청하기</a></li>
+ </ul>
+ </div>
+ </nav>
+         <header class="white">
+                 <div class="wrap bg-pic2">
+                         <h1 class="center-spacing">SAVE ALARM</h1>
+                         <p class="center-spacing">원하지 않던 그곳에서 당신을 구원해줄 알람이 울립니다.</p>
+                         <p class="right-spacing"></p>
+                 </div>
+         </header>
+         <section class="white">
+                 <div class="wrap">
+                         <h4 class="center-spacing "></h4>
+                         <h3 class="right-spacing">원하지 않았던 자리에서</h3>
+                         <p class="bg-pic left-spacing">상사와의 술자리<br>싸운 사람과 일대일 대화<br>빠질 수 없었던 회식자리<br>어색한 사람과의 집 가는 길<br>원하지 않는 상대와의 데이트<br>.<br>.<br>.</p>
+                         <h3 class="center-spacing">누군가가 구해주었으면 좋겠다는 생각을 해봤나요?</p>
+                 </div>  
+         </section>
+         <section class="navy">
+                 <div class="wrap center-spacing">
+                         <h6 class="light-gray">" 그런 당신을 구원해줄 소리 구원알람 "</h6>
+                         <img src="siren.gif">
+                 </div>
+                  <p class="right-spacing bg-pic10"></p>
+                         <p class="right-spacing"></p>
+                        <h1></h1>
+         </section>
+         <section class="black">
+                 <div class="wrap">
+                         <h3 class="center-spacing">차마 거절할 수 없는 그 자리에서!<br>사용할 수 있는 최상의 서비스를 제공해 드립니다.</h3>
+                 </div>
+         </section>
+         <section class="black bg-pic8">
+                 <div class="wrap">
+                         <h1></h1>
+                         <img src="social.jpg">
+                         <h3 class="center-spacing">당황스러웠던 그 순간! 당신을 그 자리에서 구원해<br>드릴 목소리를 바로 보내드릴게요</h3>
+                         <h1></h1>
+                         <h1></h1>
+                 </div>
+         </section>
+         <section class="pink">
+                 <div class="wrap">
+                        <h4 class="center-spacing "></h4>
+                         <h5 class="center-spacing">How to use</h5>
+                         <ul class="right-spacing">Step 1 어색한 자리에 처한 당신!</ul>
+                         <ul class="right-spacing">Step 2 원하는 타입의 알람을 누릅니다.</ul>
+                         <ul class="right-spacing">Step 3 스피커가 눌린척 알람을 상대에게 들려줍니다.</ul>
+                         <ul class="right-spacing">Step 4 자연스럽게 상황을 빠져나옵니다.</ul>
+                         <ul class="right-spacing"></ul>
+                         <p class="right-spacing">( 필요시, 사용자의 약간의 연기력이 필요합니다 )</p>
+                         <p class="right-spacing"></p>
+                 </div>
+                 </section>
+         <section class="darkgray bg-pic9 center-spacing">
+                         <h1 class="center-spacing blinking-text">save alarm</h1>
+                         <p class="right-spacing"></p>
+                 </div>
+         </section>
+         <section class="black">
+                 <div class="wrap">
+                         <h1 class="center-spacing "></h1>
+                 </div>
+         </section>
+         <section class="black">
+                <div class="wrap">
+                <h2 class="center-spacing">Service Type</h2>
+                <div class="service-type-container">
+                <div class="service-box" onclick="handleServiceClick('사회생활이 필요한 자리')">사회생활이 필요한 자리</div>
+                <div class="service-box" onclick="handleServiceClick('예의가 필요한 자리')">예의가 필요한 자리</div>
+                <div class="service-box" onclick="handleServiceClick('어색한 자리')">어색한 자리</div>
+                </div>
+                 <script> function handleServiceClick(serviceType) {alert(`'${serviceType}'을(를) 선택하셨습니다.`);} </script>
+                </section>
+
+        <section class="black">
+                 <div class="wrap">
+                         <h4 class="center-spacing "></h4>
+                 </div>
+         </section>
+         <section class="lawngreen bg-pic4">
+  <div class="wrap">
+    <h2 class="center-spacing">Type 1. 사회생활이 필요한 자리에서</h2>
+     <ol class="center-spacing">Bell. Bell. Bell. Bell. Bell. Bell.</ol>
+    <div class="table-box">오늘 가족행사 있는거 알지? 언제 들어오니?</div>
+    <div class="table-box">급한 일이 생겼어. 너가 와야 해결 될 것 같은데 언제오니?</div>
+    <div class="table-box">교통사고 났는데 보호자가 필요하대.. 빨리 와줄 수 있어?</div>
+
+    <p class="right-spacing"></p>
+    <h1></h1>
+  </div>
+</section>
+
+        <section class="black">
+                 <div class="wrap">
+                         <h4 class="center-spacing "></h4>
+                 </div>
+         </section>
+         <section class="lawngreen bg-pic4">
+  <div class="wrap">
+    <h2 class="center-spacing">Type 2. 예의가 필요한 자리에서</h2>
+    <ol class="center-spacing">Bell. Bell. Bell. Bell. Bell. Bell.</ol>
+    <div class="table-box">엄마가 일찍 집에 오랬지. 너 오는거 보고 잘거야</div>
+    <div class="table-box">오늘 가족식사 있었던거 알지? 빨리 오렴.</div>
+    <div class="table-box">회사에 급히 처리해야할 일이 있어요. 빨리 와주세요.</div>
+    <p class="right-spacing"></p>
+    <h1></h1>
+  </div>
+</section>
+
+        <section class="black">
+                 <div class="wrap">
+                         <h4 class="center-spacing "></h4>
+                 </div>
+         </section>
+         <section class="lawngreen bg-pic4">
+  <div class="wrap">
+    <h2 class="center-spacing">Type 3. 어색한 자리에서</h2>
+     <ol class="center-spacing">Bell. Bell. Bell. Bell. Bell. Bell.</ol>
+    <div class="table-box">나 남자친구랑 헤어졌어.. 너무 힘든데 전화 가능해?</div>
+    <div class="table-box">오늘 메일 보내달라했던거 안보냈어? 빨리 보내줘.</div>
+    <div class="table-box">너 지금 어디니? 오는 길에 계란 좀 사오렴.</div>
+
+    <p class="right-spacing"></p>
+    <h1></h1>
+  </div>
+</section>
+         <section class="black">
+                 <div class="wrap">
+                         <p class="right-spacing"></p>
+                         <h6 class="center-spacing">필요한 순간 원하는 타입을 선택해<br>위기 상황을 모면해보세요!</h6>
+                         <p class="right-spacing"></p>
+                 </div>
+         </section>
+         <section class="pink bg-pic7">
+                         <div class="wrap">
+                         <h4 class="center-spacing blinking-text">! 지금 신청하러 가기 !</h4>
+                         <p class="center-spacing">단, 구원알람으로도 해결되지 않는 상황은 해결해 드릴 수 없습니다.</p>
+                 </div>
+         </section>
+         <section class="black">
+                 <div class="wrap">
+                         <h4 class="center-spacing "></h4>
+                         <h4 class="center-spacing "></h4>
+                 </div>
+         </section>
+         <section class="black">
+                 <div class="wrap">
+                         <p class="center-spacing">필요한 상황에 알람을 누르면 자연스럽게 상황을 빠져나갈 수 있도록 도와드립니다.<br>단, 한달에 1번 이상 사용할 시, 당신의 원활한 사회생활에 지장을 줄 수 있습니다.</p>
+                 </div>
+         </section>
+         <section class="black">
+                 <footer class="center-spacing">
+                 save alarm/서비스 소개 사용방법 서비스 타입 신청하기<br>사업자등록번호: 111-11-1111/통신판매업신고번호: 제 1111호/개인정보책임자: 조은솔(eunsolljj@gmail.com)<br>© Web Publishing by Cho-Eunsol</footer>
+         </section>
+ </body>
+ </html>
